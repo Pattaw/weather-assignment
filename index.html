@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Assests/css/all.min.css" />
+    <link rel="stylesheet" href="./Assests/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./Assests/css/style.css" />
+  </head>
+  <body>
+    <header >
+      
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+          <div class="container">
+            <a class="navbar-brand" href="#"><div class="logo d-flex align-items-center"><img class="" src="./Assests/imgs/logo.png" alt="header image"> <div class="ms-3" ><h5 class="fs-7">weather</h5><h6 class="fs-8">lines goes there</h6></div></div></a>
+         
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+              <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active " href="#" aria-current="page">Home<span class="visually-hidden">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#" aria-current="page">news<span class="visually-hidden">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" aria-current="page">live camera<span class="visually-hidden">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" aria-current="page">photos<span class="visually-hidden">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Assests/contact.html" aria-current="page">contacts<span class="visually-hidden">(current)</span></a
+                    >
+                  </li>
+              </ul>
+             
+            </div>
+         
+        </nav>
+      </div>
+    </header>
+    <main>
+        <div class="container">
+          <form action="#" class="mt-5 d-inline-block w-100">
+            <div class="d-flex align-items-center  position-relative">
+              <input type="text" id="searchInput" placeholder="find your city" class="text-white p-relative w-100 p-3 rounded-pill "> 
+            <button class="position-absolute btn btn-primary px-5 py-2 rounded-pill" id="btn">find</button>
+            </div>
+            
+          </form>
+
+        <div class="row mt-5">
+          <div class="col-4 today p-0 grey bg-dark text-white ">
+
+            <header class="d-flex  justify-content-between p-2">
+              <div class="day"></div>
+              <div class="date">
+                <span class="dayNumber"></span>
+                <span class="monthName"></span>
+              </div>
+            </header>
+
+            <div class="weatherInfo p-4">
+              <div class="city">
+                
+              </div>
+              <div class="temp-icon d-flex justify-content-between"><div class="temp fs-1 fw-bold"></div> <img src="" class="icon" alt="icon"> </div>
+            </div>
+            <div class="status p-4 text-primary"></div>
+
+            <div class="weatherStatus p-4 d-flex ">
+              <div class="d-flex align-items-center">
+                <img src="./Assests/imgs/icon-umberella.png" alt="humididty">
+                <div class="humidity ms-2"></div>
+              </div>
+              <div class="d-flex align-items-center">
+                <img src="./Assests/imgs/icon-wind.png" alt="wind speed">
+                <div class="speed ms-2"></div>
+              </div>
+              <div class="d-flex align-items-center">
+                <img src="./Assests/imgs/icon-compass.png" alt="direction">
+                <div class="direction ms-2"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-4 nextDay p-0 grey text-white ">
+            <header class="d-flex justify-content-between p-2 bg-dark">
+
+              <div class="nextDay_name text-center w-100"></div>
+            
+            </header>
+
+            <div class="weatherInfo p-4">
+              
+              <div class="temp-icon d-flex justify-content-center flex-column align-items-center fs-2"><img src="" class="nextday_icon" alt="data"> <div class="nextday_temp "></div>  <div class="nextday_small fs-5"></div></div>
+              </div>
+
+            <div class="nextday_status p-4 text-primary text-center"></div>
+ 
+            
+          </div>
+          
+          <div class="col-4 nextDay p-0 bg-dark text-white ">
+            <header class="d-flex justify-content-between p-2  grey">
+
+              <div class="nextDay_name text-center w-100"></div>
+            
+            </header>
+
+            <div class="weatherInfo p-4">
+              
+              <div class="temp-icon d-flex justify-content-center flex-column align-items-center fs-2"><img src="" class="nextday_icon" alt="data"> <div class="nextday_temp "></div>  <div class="nextday_small fs-5"></div></div>
+              </div>
+
+            <div class="nextday_status p-4 text-primary text-center"></div>
+ 
+            
+          </div>
+          
+        </div>
+        
+        
+        </div>
+    </main>
+    <footer class="grey mt-5 p-5">
+      <div class="container d-flex justify-content-between align-items-center">
+      <form action="#" class=" d-inline-block w-50">
+        <div class="d-flex align-items-center   position-relative">
+          <input type="text" id="subscribe" placeholder="enter your email to subscribe" class=" p-relative w-100 p-3 rounded-pill "> 
+        <button class="position-absolute btn btn-primary px-4 py-2 rounded-pill">subscribe</button>
+        </div>
+        
+      </form>
+      <div class="social-media d-flex">
+        <a href="#" class="d-flex justify-content-center align-items-center"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="d-flex justify-content-center align-items-center"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="d-flex justify-content-center align-items-center"><i class="fa-brands fa-google-plus-g"></i></a>
+        <a href="#" class="d-flex justify-content-center align-items-center"><i class="fa-brands fa-pinterest"></i></a>
+      
+      </div>
+    </div>
+    </footer>
+
+    <script src="./Assests/js/all.min.js"></script>
+    <script src="./Assests/js/bootstrap.bundle.min.js"></script>
+    <script src="./Assests/js/index.js"></script>
+  </body>
+</html>
