@@ -1,8 +1,4 @@
-// function fetch data;
-//function show today data
-// function show nexts day
-// function app to start
-// http://api.weatherapi.com/v1/forecast.json?key=aa72de42f6f04a90a1c180713231508&q=London&days=3&aqi=no&alerts=no
+
 
 const searchInput = document.getElementById("searchInput");
 const btn = document.getElementById("btn");
@@ -28,7 +24,7 @@ const tomorrowStatus = document.getElementsByClassName("nextday_status");
 
 async function getData(country = "cairo") {
   let response = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=aa72de42f6f04a90a1c180713231508&q=${country}&days=3&aqi=no&alerts=no`
+    `https://api.weatherapi.com/v1/forecast.json?key=aa72de42f6f04a90a1c180713231508&q=${country}&days=3&aqi=no&alerts=no`
   );
 
   response = await response.json();
