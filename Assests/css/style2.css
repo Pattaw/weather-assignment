@@ -1,0 +1,114 @@
+* {
+  text-transform: capitalize;
+  text-decoration: none;
+  list-style-type: none;
+}
+body {
+  background-color: #212529;
+}
+header .container {
+  min-height: 20vh;
+}
+a {
+  display: inline-block;
+  padding: 0 !important;
+}
+.nav-item .nav-link {
+  border: 1px solid transparent !important;
+  transition: 0.3s;
+  padding: 0.2rem 1.5rem !important;
+  border-radius: 1rem;
+  margin-right: 0.8rem;
+  color: #fff !important;
+}
+.nav-link:hover,
+.nav-link.active {
+  border-color: #08c4ee !important;
+  color: #08c4ee !important;
+}
+
+.nav-link:hover {
+  color: #08c4ee !important;
+}
+
+main {
+  min-height: calc(100vh - 20vh);
+  background-color: #212529;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.logo > div {
+}
+.fs-7 {
+  font-size: 15px;
+}
+.fs-8 {
+  font-size: 10px;
+}
+
+form input {
+  width: calc(95% / 2);
+  border: none;
+  outline: none;
+  border: 2px solid gray;
+  margin: 0.3rem;
+  background-color: #212529;
+  padding: 0.5rem 0.6rem;
+  border-radius: 1rem;
+  color: #fff;
+}
+textarea {
+  border: 2px solid gray;
+  padding: 0.5rem 0.6rem;
+  border-radius: 1rem;
+  resize: vertical;
+  width: 96% !important;
+}
+form input:hover,
+textarea:hover,
+form input:focus,
+textarea:focus {
+  border-color: #08c4ee;
+  outline: none;
+}
+
+form button {
+  right: 1rem !important;
+}
+.row header {
+  background-color: #323544;
+}
+.grey {
+  background-color: #2d303d;
+}
+
+.social-media a {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  color: #08c4ee;
+  background-color: transparent;
+  border: 1px solid #08c4ee;
+  text-align: center;
+  transition: 0.3s;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+.social-media a:hover {
+  background-color: #08c4ee;
+  color: #fff;
+}
+.weatherStatus > div > div {
+  margin-right: 1rem;
+}
+
+.path a:hover {
+  text-decoration: underline !important;
+}
+.contact-info {
+  height: 20rem;
+  border-radius: 1rem;
+}
